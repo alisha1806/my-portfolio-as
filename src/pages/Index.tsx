@@ -7,6 +7,11 @@ import { About } from '@/components/About';
 import { Skills } from '@/components/Skills';
 import { Projects } from '@/components/Projects';
 import { Achievements } from '@/components/Achievements';
+import { Clubs } from '@/components/Clubs';
+import autumnLandscape from '@/assets/autumn-landscape.jpg';
+import winterLandscape from '@/assets/winter-landscape.jpg';
+import springLandscape from '@/assets/spring-landscape.jpg';
+import summerLandscape from '@/assets/summer-landscape.jpg';
 
 type Season = 'autumn' | 'winter' | 'spring' | 'summer';
 
@@ -27,7 +32,10 @@ const Index = () => {
         { id: 'achievements', season: 'summer' as Season },
       ];
       
-      const current = sections.find(section => {
+      const clubsSection = { id: 'clubs', season: 'autumn' as Season };
+      const allSections = [...sections, clubsSection];
+      
+      const current = allSections.find(section => {
         const element = document.getElementById(section.id);
         if (element) {
           const rect = element.getBoundingClientRect();
@@ -52,15 +60,29 @@ const Index = () => {
     summer: 'gradient-summer',
   }[currentSeason];
 
+  const landscapeImage = {
+    autumn: autumnLandscape,
+    winter: winterLandscape,
+    spring: springLandscape,
+    summer: summerLandscape,
+  }[currentSeason];
+
   return (
     <div className="relative min-h-screen overflow-x-hidden">
-      {/* Seasonal background */}
+      {/* Seasonal background with landscape */}
       <div 
         className={`fixed inset-0 ${gradientClass} transition-all duration-1000 -z-10`}
         style={{ 
           transform: `translateY(${scrollY * 0.5}px)`,
         }}
-      />
+      >
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 transition-opacity duration-1000"
+          style={{ 
+            backgroundImage: `url(${landscapeImage})`,
+          }}
+        />
+      </div>
       
       {/* Particles */}
       <SeasonalParticles season={currentSeason} />
@@ -87,6 +109,9 @@ const Index = () => {
         </section>
         <section id="achievements">
           <Achievements />
+        </section>
+        <section id="clubs">
+          <Clubs />
         </section>
         
         {/* Footer */}

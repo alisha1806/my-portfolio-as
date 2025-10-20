@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
-import { Home, User, Code2, Trophy } from 'lucide-react';
+import { Home, User, Code2, Trophy, Users } from 'lucide-react';
 
 const navItems = [
   { name: 'Home', icon: Home, href: '#home' },
   { name: 'About', icon: User, href: '#about' },
   { name: 'Projects', icon: Code2, href: '#projects' },
   { name: 'Achievements', icon: Trophy, href: '#achievements' },
+  { name: 'Clubs', icon: Users, href: '#clubs' },
 ];
 
 export const Navigation = () => {
