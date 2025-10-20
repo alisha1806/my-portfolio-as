@@ -12,11 +12,11 @@ export const About = () => {
           </p>
           
           <p className="text-lg md:text-xl text-foreground/90 leading-relaxed mb-6">
-            Currently enhancing my skills through the <span className="font-semibold text-primary">Self Engineering Course at Karka Software Academy</span>, I'm committed to continuous learning and innovation in the tech field.
+            Currently enhancing my skills through the <span className="font-semibold text-primary">Self Engineering Course at Karka Software Academy</span>, I'm committed to continuous learning and innovation. Beyond coding, I'm an active member of the <span className="font-semibold text-primary">Literary Club</span>, where I explore creative writing and literary analysis.
           </p>
 
           <p className="text-lg md:text-xl text-foreground/90 leading-relaxed">
-            My approach combines technical expertise with creative problem-solving, allowing me to build solutions that not only work seamlessly but also delight users. I believe great design is invisible – it just works.
+            My approach combines technical expertise with creative problem-solving. Whether it's competitive coding at <span className="font-semibold text-primary">Byte Bash Blitz</span> or crafting elegant user interfaces, I believe in creating solutions that not only work seamlessly but also delight users.
           </p>
         </div>
       </div>

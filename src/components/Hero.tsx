@@ -16,14 +16,6 @@ export const Hero = ({ season }: HeroProps) => {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden px-4">
       <div className="max-w-6xl mx-auto text-center z-10 parallax-section">
-        <div className="mb-8 animate-fade-in">
-          <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-2xl">
-            <div className="w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-              <span className="text-6xl font-bold text-primary">AA</span>
-            </div>
-          </div>
-        </div>
-        
         <h1 className={`text-6xl md:text-8xl font-extrabold mb-6 bg-gradient-to-r ${seasonColors[season]} bg-clip-text text-transparent animate-scale-in`}>
           A.S. Alisha
         </h1>
@@ -33,7 +25,7 @@ export const Hero = ({ season }: HeroProps) => {
         </p>
         
         <p className="text-lg md:text-xl text-muted-foreground/80 mb-12 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.3s' }}>
-          College Sophomore | Creative Technologist | Problem Solver
+          College Sophomore | Creative Technologist | Literary Club Member
         </p>
 
         <div className="flex flex-wrap gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: '0.4s' }}>

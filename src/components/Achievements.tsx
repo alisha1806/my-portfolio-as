@@ -1,4 +1,4 @@
-import { Trophy, Award, Code, Lightbulb } from 'lucide-react';
+import { Trophy, Award, Code, Lightbulb, BookOpen, Zap } from 'lucide-react';
 import { Card } from './ui/card';
 
 const achievements = [
@@ -6,28 +6,42 @@ const achievements = [
     title: '1st Prize - National Pi Day Paper Presentation',
     description: 'Presented innovative research on mathematical algorithms and their applications in computer science.',
     icon: Trophy,
-    color: 'hsl(var(--autumn-primary))',
+    color: 'hsl(var(--summer-primary))',
     year: '2024',
   },
   {
     title: '2nd Prize - AI Quiz Competition',
     description: 'Demonstrated deep knowledge of artificial intelligence concepts and applications.',
     icon: Lightbulb,
-    color: 'hsl(var(--winter-primary))',
+    color: 'hsl(var(--summer-accent))',
+    year: '2024',
+  },
+  {
+    title: 'Byte Bash Blitz Participant',
+    description: 'Participated in competitive coding challenges, demonstrating strong algorithmic thinking and problem-solving abilities.',
+    icon: Zap,
+    color: 'hsl(var(--summer-secondary))',
     year: '2024',
   },
   {
     title: 'Hackathon Participant',
     description: 'Collaborated with teams to build innovative solutions under time constraints, showcasing problem-solving and teamwork skills.',
     icon: Code,
-    color: 'hsl(var(--spring-primary))',
+    color: 'hsl(48 95% 60%)',
     year: '2024',
+  },
+  {
+    title: 'Literary Club Member',
+    description: 'Active member of the college literary club, exploring creative writing and literary analysis.',
+    icon: BookOpen,
+    color: 'hsl(48 90% 55%)',
+    year: '2023-2024',
   },
   {
     title: 'Self Engineering Course - Karka Software Academy',
     description: 'Comprehensive training in modern web development technologies and best practices.',
     icon: Award,
-    color: 'hsl(var(--summer-primary))',
+    color: 'hsl(48 85% 50%)',
     year: '2023-2024',
   },
 ];

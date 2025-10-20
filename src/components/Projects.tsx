@@ -16,17 +16,6 @@ const projects = [
     technologies: ['React', 'TypeScript', 'Canvas API', 'Tailwind CSS'],
     highlight: true,
   },
-  {
-    title: 'Portfolio Website',
-    description: 'A modern, interactive portfolio with seasonal particle effects and parallax scrolling. Features dynamic backgrounds and responsive design.',
-    features: [
-      'Seasonal particle animations',
-      'Parallax scrolling effects',
-      'Fully responsive design',
-      'Interactive cursor effects',
-    ],
-    technologies: ['React', 'TypeScript', 'Canvas', 'Tailwind CSS'],
-  },
 ];
 
 export const Projects = () => {
