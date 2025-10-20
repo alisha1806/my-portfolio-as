@@ -36,61 +36,89 @@ All colors MUST be HSL.
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Seasonal Color Palettes */
+    /* Autumn */
+    --autumn-primary: 16 100% 60%;
+    --autumn-secondary: 25 76% 31%;
+    --autumn-accent: 39 100% 58%;
+    --autumn-bg-start: 33 100% 96%;
+    --autumn-bg-end: 28 100% 88%;
+    
+    /* Winter */
+    --winter-primary: 210 79% 60%;
+    --winter-secondary: 210 17% 72%;
+    --winter-accent: 195 53% 79%;
+    --winter-bg-start: 200 100% 97%;
+    --winter-bg-end: 210 50% 94%;
+    
+    /* Spring */
+    --spring-primary: 340 82% 85%;
+    --spring-secondary: 162 63% 73%;
+    --spring-accent: 142 76% 73%;
+    --spring-bg-start: 340 100% 98%;
+    --spring-bg-end: 162 100% 96%;
+    
+    /* Summer */
+    --summer-primary: 48 100% 62%;
+    --summer-secondary: 145 63% 61%;
+    --summer-accent: 200 98% 63%;
+    --summer-bg-start: 48 100% 95%;
+    --summer-bg-end: 145 50% 92%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* Gradients */
+    --gradient-autumn: linear-gradient(135deg, hsl(var(--autumn-bg-start)), hsl(var(--autumn-bg-end)));
+    --gradient-winter: linear-gradient(135deg, hsl(var(--winter-bg-start)), hsl(var(--winter-bg-end)));
+    --gradient-spring: linear-gradient(135deg, hsl(var(--spring-bg-start)), hsl(var(--spring-bg-end)));
+    --gradient-summer: linear-gradient(135deg, hsl(var(--summer-bg-start)), hsl(var(--summer-bg-end)));
 
-    --sidebar-primary: 240 5.9% 10%;
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
 
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+@layer base {
+  * {
+    @apply border-border;
   }
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+    font-weight: 700;
+  }
+}
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+@layer utilities {
+  .gradient-autumn {
+    background: var(--gradient-autumn);
+  }
+  
+  .gradient-winter {
+    background: var(--gradient-winter);
+  }
+  
+  .gradient-spring {
+    background: var(--gradient-spring);
+  }
+  
+  .gradient-summer {
+    background: var(--gradient-summer);
+  }
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+  .text-shadow-glow {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+  .parallax-section {
+    transform-style: preserve-3d;
+    transition: var(--transition-smooth);
   }
 }
 
