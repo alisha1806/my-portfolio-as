@@ -84,8 +84,6 @@ const Index = () => {
       {/* Particles */}
       <SeasonalParticles season={currentSeason} />
       
-      {/* Season selector */}
-      <SeasonSelector currentSeason={currentSeason} onSeasonChange={setCurrentSeason} />
       
       {/* Floating Tabs Navigation */}
       <FloatingTabs />
