@@ -8,19 +8,11 @@ export const About = () => {
         
         <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-2xl border border-border/50">
           <p className="text-lg md:text-xl text-foreground/90 leading-relaxed mb-6">
-            I'm a passionate college sophomore specializing in <span className="font-semibold text-primary">Website Development</span> and <span className="font-semibold text-primary">UI/UX Design</span>. My journey in technology is driven by a desire to create beautiful, functional, and user-centric digital experiences.
-          </p>
-          
-          <p className="text-lg md:text-xl text-foreground/90 leading-relaxed mb-6">
-            Currently enhancing my skills through the <span className="font-semibold text-primary">Self Engineering Course at Karka Software Academy</span> and <span className="font-semibold text-primary">Microsoft Learn courses</span>, I'm committed to continuous learning and innovation. I'm also an active member of the <span className="font-semibold text-primary">Literary Club</span>, where I explore creative writing and literary analysis.
+            I'm a passionate college sophomore specializing in <span className="font-semibold text-primary">Website Development</span> and <span className="font-semibold text-primary">UI/UX Design</span>. My journey in technology is driven by a desire to create beautiful and user-centric digital experiences.
           </p>
 
           <p className="text-lg md:text-xl text-foreground/90 leading-relaxed mb-6">
-            My approach combines technical expertise with creative problem-solving. Whether it's competitive coding at <span className="font-semibold text-primary">Byte Bash Blitz</span> or crafting elegant user interfaces, I believe in creating solutions that not only work seamlessly but also delight users.
-          </p>
-
-          <p className="text-lg md:text-xl text-foreground/90 leading-relaxed mb-6">
-            I built <span className="font-semibold text-primary">Learn Sorting</span>, an interactive educational platform that visualizes sorting algorithms in real-time. This project showcases my ability to make complex computer science concepts accessible through engaging, animated experiences using React, TypeScript, and the Canvas API.
+            My approach combines technical expertise with creative problem-solving. Whether it's competitive coding at <span className="font-semibold text-primary">Byte Bash Blitz</span> , I believe in creating solutions that not only work seamlessly but also delight users.
           </p>
 
           <div className="bg-primary/5 rounded-xl p-6 border border-primary/10">
