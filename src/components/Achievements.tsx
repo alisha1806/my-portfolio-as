@@ -17,9 +17,9 @@ const achievements = [
     year: '2024',
   },
   {
-    title: 'Byte Bash Blitz Participant',
-    description: 'Participated in competitive coding challenges, demonstrating strong algorithmic thinking and problem-solving abilities.',
-    icon: Zap,
+    title: 'Microsoft Learn Courses',
+    description: 'Completed comprehensive Microsoft Learn training courses in cloud technologies, development tools, and modern web development practices.',
+    icon: Award,
     color: 'hsl(var(--summer-secondary))',
     year: '2024',
   },
@@ -29,13 +29,6 @@ const achievements = [
     icon: Code,
     color: 'hsl(48 95% 60%)',
     year: '2024',
-  },
-  {
-    title: 'Literary Club Member',
-    description: 'Active member of the college literary club, exploring creative writing and literary analysis.',
-    icon: BookOpen,
-    color: 'hsl(48 90% 55%)',
-    year: '2023-2024',
   },
   {
     title: 'Self Engineering Course - Karka Software Academy',
@@ -50,7 +43,7 @@ export const Achievements = () => {
   return (
     <section id="achievements" className="min-h-screen flex items-center justify-center px-4 py-20">
       <div className="max-w-6xl mx-auto w-full">
-        <h2 className="text-5xl md:text-6xl font-bold mb-16 text-center bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+        <h2 className="text-5xl md:text-6xl font-bold mb-16 text-center bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent animate-fade-in">
           Achievements & Certifications
         </h2>
         

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { SeasonalParticles } from '@/components/SeasonalParticles';
 import { SeasonSelector } from '@/components/SeasonSelector';
-import { Navigation } from '@/components/Navigation';
+import { FloatingTabs } from '@/components/FloatingTabs';
 import { Hero } from '@/components/Hero';
 import { About } from '@/components/About';
 import { Skills } from '@/components/Skills';
@@ -77,7 +77,7 @@ const Index = () => {
         }}
       >
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 transition-opacity duration-1000"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-70 transition-opacity duration-1000"
           style={{ 
             backgroundImage: `url(${landscapeImage})`,
           }}
@@ -90,8 +90,8 @@ const Index = () => {
       {/* Season selector */}
       <SeasonSelector currentSeason={currentSeason} onSeasonChange={setCurrentSeason} />
       
-      {/* Floating Navigation */}
-      <Navigation />
+      {/* Floating Tabs Navigation */}
+      <FloatingTabs />
       
       {/* Content sections */}
       <main>

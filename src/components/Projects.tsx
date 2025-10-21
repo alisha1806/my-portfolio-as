@@ -22,7 +22,7 @@ export const Projects = () => {
   return (
     <section id="projects" className="min-h-screen flex items-center justify-center px-4 py-20">
       <div className="max-w-6xl mx-auto w-full">
-        <h2 className="text-5xl md:text-6xl font-bold mb-16 text-center bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+        <h2 className="text-5xl md:text-6xl font-bold mb-16 text-center bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent animate-fade-in">
           Featured Projects
         </h2>
         

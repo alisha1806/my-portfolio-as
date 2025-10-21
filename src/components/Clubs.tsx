@@ -16,23 +16,16 @@ export const Clubs = () => {
       color: 'hsl(var(--winter-primary))',
       bgColor: 'hsl(var(--winter-primary) / 0.1)',
     },
-    {
-      name: 'Tech Community',
-      icon: Users,
-      description: 'Collaborating with peers on innovative projects and staying updated with emerging technologies.',
-      color: 'hsl(var(--autumn-primary))',
-      bgColor: 'hsl(var(--autumn-primary) / 0.1)',
-    },
   ];
 
   return (
     <section className="min-h-screen flex items-center justify-center px-4 py-20">
       <div className="max-w-6xl mx-auto w-full">
-        <h2 className="text-5xl md:text-6xl font-bold mb-12 text-center bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+        <h2 className="text-5xl md:text-6xl font-bold mb-12 text-center bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent animate-fade-in">
           Clubs & Activities
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {clubs.map((club, index) => {
             const Icon = club.icon;
             return (
