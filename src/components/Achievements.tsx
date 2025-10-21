@@ -7,14 +7,14 @@ const achievements = [
     description: 'Presented innovative research on mathematical algorithms and their applications in computer science.',
     icon: Trophy,
     color: 'hsl(var(--summer-primary))',
-    year: '2024',
+    year: '2025',
   },
   {
     title: '2nd Prize - AI Quiz Competition',
     description: 'Demonstrated deep knowledge of artificial intelligence concepts and applications.',
     icon: Lightbulb,
     color: 'hsl(var(--summer-accent))',
-    year: '2024',
+    year: '2025',
   },
   {
     title: 'Microsoft Learn Courses',
@@ -28,7 +28,7 @@ const achievements = [
     description: 'Collaborated with teams to build innovative solutions under time constraints, showcasing problem-solving and teamwork skills.',
     icon: Code,
     color: 'hsl(48 95% 60%)',
-    year: '2024',
+    year: '2025',
   },
   {
     title: 'Self Engineering Course - Karka Software Academy',

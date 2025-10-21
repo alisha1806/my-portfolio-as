@@ -24,8 +24,12 @@ export const Hero = ({ season }: HeroProps) => {
           UI/UX Designer & Web Developer
         </p>
         
-        <p className="text-lg md:text-xl text-muted-foreground/80 mb-12 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.3s' }}>
+        <p className="text-lg md:text-xl text-muted-foreground/80 mb-4 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.3s' }}>
           College Sophomore | Creative Technologist | Literary Club Member
+        </p>
+
+        <p className="text-base md:text-lg text-foreground/70 mb-12 max-w-2xl mx-auto italic animate-fade-in" style={{ animationDelay: '0.35s' }}>
+          Where logic meets creativity- in code and beyond
         </p>
 
         <div className="flex flex-wrap gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: '0.4s' }}>

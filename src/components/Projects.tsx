@@ -2,21 +2,7 @@ import { ExternalLink, Github } from 'lucide-react';
 import { Button } from './ui/button';
 import { Card } from './ui/card';
 
-const projects = [
-  {
-    title: 'Learn Sorting',
-    description: 'An interactive educational platform that visualizes sorting algorithms in real-time. Built with React and modern web technologies to make computer science concepts accessible and engaging.',
-    features: [
-      'Real-time algorithm visualization',
-      'Interactive step-by-step execution',
-      'Multiple sorting algorithms (Bubble, Quick, Merge, etc.)',
-      'Performance comparisons and analytics',
-    ],
-    challenges: 'Implementing smooth animations while maintaining performance, creating an intuitive UI for complex concepts, and ensuring educational value.',
-    technologies: ['React', 'TypeScript', 'Canvas API', 'Tailwind CSS'],
-    highlight: true,
-  },
-];
+const projects: any[] = [];
 
 export const Projects = () => {
   return (
@@ -95,8 +81,7 @@ export const Projects = () => {
         <div className="mt-12 bg-card/50 backdrop-blur-sm rounded-2xl p-8 border border-border/50">
           <h3 className="text-2xl font-bold mb-4">Future Aspirations</h3>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            I'm excited to expand my portfolio with projects involving AI/ML integration, progressive web apps, and innovative user experiences. 
-            My goal is to create solutions that make technology more accessible and enjoyable for everyone.
+            I'm driven by curiosity and a genuine hunger to learn. Every challenge is an opportunity to explore something new—whether it's diving deep into AI/ML algorithms, experimenting with cutting-edge web technologies, or discovering creative ways to solve problems. I believe the best projects come from asking questions, staying curious, and never settling for "good enough." My journey is about continuous growth, pushing boundaries, and building things that make a difference while learning something valuable along the way.
           </p>
         </div>
       </div>
