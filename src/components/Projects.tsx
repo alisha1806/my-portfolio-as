@@ -29,14 +29,14 @@ export const Projects = () => {
         </h2>
 
         <div className="space-y-8">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <Card
               key={project.title}
-              className={`p-8 md:p-10 ${
+              className={`p-8 md:p-10 rounded-xl ${
                 project.highlight
-                  ? 'border-primary/50 shadow-2xl bg-gradient-to-br from-card/80 to-primary/5'
-                  : 'bg-card/50'
-              } backdrop-blur-sm hover:scale-[1.02] transition-all duration-300`}
+                  ? 'bg-gradient-to-br from-card/80 to-primary/10 border border-primary/30 shadow-xl'
+                  : 'bg-card/40 border border-border/30'
+              } backdrop-blur-md hover:scale-[1.02] transition-all duration-300`}
             >
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="flex-1">
@@ -96,7 +96,7 @@ export const Projects = () => {
           ))}
         </div>
 
-        <div className="mt-12 bg-card/50 backdrop-blur-sm rounded-2xl p-8 border border-border/50">
+        <div className="mt-12 bg-card/40 backdrop-blur-md rounded-2xl p-8 border border-border/30">
           <h3 className="text-2xl font-bold mb-4">Future Aspirations</h3>
           <p className="text-lg text-muted-foreground leading-relaxed">
             Aspires to create AI-powered learning platforms that simplify complex ideas
