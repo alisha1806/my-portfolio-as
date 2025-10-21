@@ -77,7 +77,7 @@ export const FloatingTabs = () => {
     <div className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-full max-w-2xl px-4">
       <div 
         ref={scrollRef}
-        className="bg-card/90 backdrop-blur-xl rounded-full shadow-2xl border border-border/50 overflow-x-auto scrollbar-hide cursor-grab active:cursor-grabbing"
+        className="bg-background/30 backdrop-blur-md rounded-full shadow-lg border border-border/20 overflow-x-auto scrollbar-hide cursor-grab active:cursor-grabbing"
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
@@ -99,8 +99,8 @@ export const FloatingTabs = () => {
                 onClick={() => scrollToSection(tab.href, index)}
                 className={`group flex items-center gap-2 px-6 py-3 rounded-full transition-all duration-300 whitespace-nowrap ${
                   isActive
-                    ? 'bg-primary text-primary-foreground shadow-lg scale-105'
-                    : 'hover:bg-muted hover:scale-105'
+                    ? 'bg-background/40 text-foreground shadow-md scale-105 backdrop-blur-sm'
+                    : 'hover:bg-background/20 hover:scale-105 text-foreground/80'
                 }`}
               >
                 <Icon className="w-5 h-5" />
@@ -110,7 +110,7 @@ export const FloatingTabs = () => {
           })}
         </div>
       </div>
-      <p className="text-center text-xs text-muted-foreground mt-2 animate-pulse">
+      <p className="text-center text-xs text-foreground/60 mt-2 animate-pulse">
         ← Swipe to explore →
       </p>
     </div>
