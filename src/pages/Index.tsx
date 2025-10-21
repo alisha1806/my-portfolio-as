@@ -72,9 +72,6 @@ const Index = () => {
       {/* Seasonal background with landscape */}
       <div 
         className={`fixed inset-0 ${gradientClass} transition-all duration-1000 -z-10`}
-        style={{ 
-          transform: `translateY(${scrollY * 0.5}px)`,
-        }}
       >
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-70 transition-opacity duration-1000"
